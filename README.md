@@ -59,3 +59,24 @@ git push -u origin main
 
 
 This will push the committed changes to the GitHub repository.
+
+||||||||||||||||||||||||||
+
+docker 
+
+cmd 
+docker build -t docker01  .
+
+docker pull openjdk
+
+docker tun --name java -it -d openjdk 
+docker ps
+docker exec -it java jshell
+>>>execute any java program 
+/exit 
+
+docker stop c_id
+docker container rm c_id
+docker image prune
+
+
